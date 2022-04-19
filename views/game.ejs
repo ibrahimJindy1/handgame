@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="An impressive and flawless site template that includes various UI elements and countless features, attractive ready-made blocks and rich pages, basically everything you need to create a unique and professional website.">
+    <meta name="keywords"
+        content="bootstrap 5, business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, saas, sass, seo, startup">
+    <meta name="author" content="elemis">
+    <title>Biotec game</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="./assets/css/plugins.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/colors/grape.css">
+    <link rel="preload" href="./assets/css/fonts/urbanist.css" as="style" onload="this.rel='stylesheet'">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="content-wrapper"
+        style="	background-image: url('./assets/img/backgroundimage.png');background-size: cover;">
+        <header class="wrapper">
+            <nav class="navbar navbar-expand-lg center-nav transparent navbar-light caret-none">
+                <div class="container flex-lg-row flex-nowrap align-items-center">
+                    <div class="navbar-brand w-100">
+                        <a href="./index.html">
+                            <img src="./assets/img/biotechlogo.png" srcset="./assets/img/biotechlogo.png 2x" alt=""
+                                style="height:50px" />
+                        </a>
+                    </div>
+                    <div class="navbar-collapse offcanvas-nav">
+                        <div class="offcanvas-header d-lg-none d-xl-none">
+                            <a href="./index.html"><img src="./assets/img/ramadankareem.png"
+                                    srcset="./assets/img/ramadankareem.png 2x" alt="" /></a>
+                            <button type="button" class="btn-close btn-close-white offcanvas-close offcanvas-nav-close"
+                                aria-label="Close"></button>
+                        </div>
+                        <ul class="navbar-nav">
+
+
+                        </ul>
+                        <!-- /.navbar-nav -->
+                    </div>
+                    <!-- /.navbar-collapse -->
+                    <div class="navbar-other w-100 d-flex ms-auto">
+                        <ul class="navbar-nav flex-row align-items-center ms-auto" data-sm-skip="true">
+                            <li class="nav-item">
+                                <nav class="nav social social-muted justify-content-end text-end">
+                                    <a href="./index.html">
+                                        <img src="./assets/img/ramadankareem.png"
+                                            srcset="./assets/img/ramadankareem.png 2x" alt="" style="height:50px" />
+                                    </a>
+                                </nav>
+                                <!-- /.social -->
+                            </li>
+                            <li class="nav-item d-lg-none">
+                                <div class="navbar-hamburger"><button class="hamburger animate plain"
+                                        data-toggle="offcanvas-nav"><span></span></button></div>
+                            </li>
+                        </ul>
+                        <!-- /.navbar-nav -->
+                    </div>
+                    <!-- /.navbar-other -->
+                </div>
+                <!-- /.container -->
+            </nav>
+            <!-- /.navbar -->
+        </header>
+
+        <div class="col-xl-12 order-xl-2">
+            <section id="arrows" class="wrapper pt-8 px-4">
+
+
+                <% for(var i=0; i<gifts.length; i++) {%>
+                    <span class="badge" style="width:7.3%">
+                        <button type="button" value=<%=gifts[i] %> class="badge"
+                            style="border: none; color: transparent; padding: 0px;">
+                            <div id="card" class="card" style="background-color:#E1D8D6">
+                                <div class="card-body align-items-center" style="margin:-20px">
+                                    <img src="./assets/img/handclosed.png" srcset="./assets/img/handclosed.png 2x"
+                                        alt="" style='height: 100%; width: 100%; object-fit: contain' />
+                                </div>
+                                <div class="card-footer position-relative" style="background-color:black;"><a
+                                        class="stretched-link link-body btn-copy-icon"
+                                        style="font-weight: bolder; color: white; 	font-size: 18px;">
+                                        <%=i+1 %>
+                                    </a></div>
+                            </div>
+                        </button>
+
+                    </span>
+                    <% } %>
+
+
+
+            </section>
+
+        </div>
+        <div id="myModal" class="modal">
+
+            <div class="modal-content  align-items-center justify ">
+                <div class="modal-header align-items-center justify-content-center"
+                    style="background-color: #e07c00; text-align: center;">
+                    <span class="close" style="padding-right: 10px;">&times;</span>
+                    <h2 id="header1" style="color: #fff;">Please Wait</h2>
+                </div>
+                <div class="modal-body">
+                    <div id="loader" class="loader"></div>
+                    <h3 id="bodyImage">
+                        <div class="card-body align-items-center" style="margin:-20px">
+                            <img id="bodyImg" src="./assets/img/handopen.png" srcset="./assets/img/handopen.png 2x"
+                                alt="" style='height: 350px; width: 350px; ' />
+                        </div>
+                    </h3>
+                </div>
+
+            </div>
+
+        </div>
+        <button id="myBtn">Open Modal</button>
+        <!-- /header -->
+
+        <!-- /section -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/theme.js"></script>
+    <script type="text/javascript">
+        $("button").click(function () {
+            var modal = document.getElementById("myModal");
+            var loader = document.getElementById("loader");
+            var bodyImage = document.getElementById("bodyImage");
+            var bodyImg = document.getElementById("bodyImg");
+            var header = document.getElementById("header1");
+
+            var fired_button = $(this).val();
+            console.log(fired_button);
+            header.innerText = "Please Wait..."
+            modal.style.display = "block";
+            bodyImage.style.display = "none";
+            loader.style.display = "block";
+            setTimeout(() => {
+                loader.style.display = "none";
+                bodyImage.style.display = "block";
+                if (fired_button != -1) {
+                    header.innerText = "Congratulation You Won"
+                    $(this).find('img').attr('src', './assets/img/prize' + (fired_button) + '.png')
+                    $(this).find('img').attr('srcset', './assets/img/prize' + (fired_button) + '.png 2x')
+                    bodyImg.setAttribute('src', './assets/img/prize' + (fired_button) + '.png')
+                    bodyImg.setAttribute('srcset', './assets/img/prize' + (fired_button) + '.png 2x')
+                    $(this).find('.card').attr('style', "background-color:#35C121;")
+                }
+                else {
+
+                    header.innerText = "Sorry try Again"
+                    $(this).find('img').attr('src', './assets/img/handopen.png')
+                    $(this).find('img').attr('srcset', './assets/img/handopen.png 2x')
+                    bodyImg.setAttribute('src', './assets/img/handopen.png')
+                    bodyImg.setAttribute('srcset', './assets/img/handopen.png 2x')
+                    $(this).find('.card').attr('style', "background-color:#E82D2D;")
+                }
+            }, 2000)
+            setTimeout(() => {
+                    modal.style.display = "none";
+                }, 4000);
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        var modal = document.getElementById("myModal");
+
+
+        var btn = document.getElementById("myBtn");
+
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

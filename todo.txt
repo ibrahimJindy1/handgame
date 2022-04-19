@@ -1,0 +1,6 @@
+1-make object for player
+2-make list of prizes
+3- options
+4-initialize the game
+5- select handed
+6- try attempt
